@@ -17,7 +17,7 @@ var TodoForm = React.createClass({
 					saveTodoState={this.props.saveTodoState}
 					error={this.props.errors.post}
 				/>
-				<input type="submit" value="Save Todo" className="btn btn-success btn-lg" />
+				<input type="submit" value="Post" className="btn btn-success btn-lg" />
 			</form>
 		);
 	}
