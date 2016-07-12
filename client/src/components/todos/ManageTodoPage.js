@@ -55,7 +55,7 @@ var ManageTodoPage = React.createClass({
 		}
 		// todoApi.saveTodo(this.state.todo);
 		
-		browserHistory.push('/home-page');
+		browserHistory.push('/todos-page');
 
 	},
 

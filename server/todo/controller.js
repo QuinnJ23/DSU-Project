@@ -16,8 +16,7 @@ function createTodo(req, res)
 {
 	Todo.create(
 	{
-		title: req.body.title,
-		description: req.body.description,
+		post: req.body.post,
 		completed: req.body.completed
 	},
 	function (err, item) {
@@ -62,8 +61,7 @@ function updateTodo(req, res)
 {
 	findTodo(req, res, function (item)
 	{
-		item.title = req.body.title
-		item.description = req.body.description
+		item.post = req.body.post
 		item.completed = req.body.completed
 
 		item.save(function (err)
