@@ -31,7 +31,7 @@ var Todos = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<h2>Things we need todo</h2>
+				<h2>Posted Posts</h2>
 				<Link className="btn btn-success btn-sm" to="/manage-todo">Add todo</Link>
 				<TodoList 
 					todos={this.state.todos} 

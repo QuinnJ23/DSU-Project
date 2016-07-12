@@ -9,7 +9,7 @@ var TodoForm = React.createClass({
 		console.log(this.props.errors);
 		return (
 			<form onSubmit={this.props.saveTodo}>
-				<h3>Todo Form</h3>
+				<h3>Post Form</h3>
 				<TextInput
 					name="post"
 					placeholder="Post"

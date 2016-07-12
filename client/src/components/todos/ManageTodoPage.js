@@ -80,7 +80,7 @@ var ManageTodoPage = React.createClass({
 		console.log(this.state.todo);
 		return (
 			<div>
-				<h2>Manage Todo</h2>
+				<h2>Create Posts</h2>
 				<TodoForm
 					todo={this.state.todo}
 					saveTodoState={this.saveTodoState}
