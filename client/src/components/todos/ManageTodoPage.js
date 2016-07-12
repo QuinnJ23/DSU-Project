@@ -32,7 +32,7 @@ var ManageTodoPage = React.createClass({
 		var value = event.target.value;
 		var newTodo = Object.assign({}, this.state.todo);
 
-		// sort of like todo.title or todo.description
+		// sort of like todo.title or 
 		newTodo[field] = value;
 
 		this.setState({
@@ -55,7 +55,7 @@ var ManageTodoPage = React.createClass({
 		}
 		// todoApi.saveTodo(this.state.todo);
 		
-		browserHistory.push('/todos-page');
+		browserHistory.push('/home-page');
 
 	},
 
