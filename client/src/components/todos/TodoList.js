@@ -24,19 +24,19 @@ var TodoList = React.createClass({
 		var createTodoRow = function (todo) {
 			var tdClass = '';
 			var isDone = 'Mark as Done';
-			var todoTitle = todo.title;
+			var todopost = todo.post;
 			var todoDescription = todo.description;
 
 			if (todo.completed) {
 				tdClass = 'todo-done';
 				isDone = 'Mark as Not Done';
-				todoTitle = (<s>{todo.title}</s>);
+				todopost = (<s>{todo.post}</s>);
 				todoDescription = (<s>{todo.description}</s>);
 			}
 
 			return (
 				<tr key={todo._id}>
-					<td className={tdClass}><Link to={'/manage-todo/' + todo._id}>{todoTitle}</Link></td>
+					<td className={tdClass}><Link to={'/manage-todo/' + todo._id}>{todopost}</Link></td>
 					<td className={tdClass}>{todoDescription}</td>
 					<td><a href="#" onClick={this.deleteTodo.bind(this, todo)}>Delete</a></td>
 					<td><a href="#" onClick={this.updateTodo.bind(this, todo)}>{isDone}</a></td>
@@ -53,8 +53,7 @@ var TodoList = React.createClass({
 			<table className="table">
 				<thead>
 					<tr>
-						<th>Title</th>
-						<th>Description</th>
+						<th>post</th>
 						<th></th>
 						<th></th>
 					</tr>
