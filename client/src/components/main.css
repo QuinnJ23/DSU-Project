@@ -1,0 +1,21 @@
+body{
+	color: #3561ff;
+	background: #a9a9a9;
+}
+.todo-done {
+	opacity: 0.5;
+}
+.jumbotron {
+	color: #3561ff;
+	background:#2F4F4F;
+
+}
+.navbar-brand {
+	color: #3561ff;
+	background:#2F4F4F;
+}
+
+.navbar-nav{
+	color: #3561ff;
+	background:#2F4F4F;
+}
