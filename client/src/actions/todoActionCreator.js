@@ -21,21 +21,6 @@ var TodoActionCreator = {
 			});
 	},
 
-	deleteTodo: function (todo) {
-		var deleteTodoPromise = API.deleteTodo(todo);
-
-		deleteTodoPromise
-			.then(function () {
-				Dispatcher.dispatch({
-					actionType: ActionTypes.DELETE_TODO,
-					todoId: todo._id
-				});
-			})
-			.fail(function (xhr, status, err) {
-				console.log('Delete Todo Failed!')
-			});
-	},
-
 	updateTodo: function (todo) {
 		var updateTodoPromise = API.updateTodo(todo);
 
