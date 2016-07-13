@@ -45,11 +45,6 @@ Dispatcher.register(function (action) {
 			TodoStore.emitChange();
 			toastr.success('Todo CREATED!!!', 'CREATED TODO');
 			break;
-		case ActionTypes.DELETE_TODO:
-			_.remove(_todos, {_id: action.todoId});
-			TodoStore.emitChange();
-			toastr.info('Todo deleted!', 'DELETED TODO');
-			break;
 		case ActionTypes.UPDATE_TODO:
 			var existingTodo = _.find(_todos, {_id: action.todo._id});
 			var existingTodoIndex = _.indexOf(_todos, existingTodo);

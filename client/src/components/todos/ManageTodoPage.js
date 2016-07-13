@@ -32,7 +32,7 @@ var ManageTodoPage = React.createClass({
 		var value = event.target.value;
 		var newTodo = Object.assign({}, this.state.todo);
 
-		// sort of like todo.title or todo.description
+		// sort of like todo.post
 		newTodo[field] = value;
 
 		this.setState({
