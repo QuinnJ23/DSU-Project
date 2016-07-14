@@ -26,6 +26,7 @@ var TodoList = React.createClass({
 			var isDone = 'Mark as Done';
 			var todopost = todo.post;
 
+
 			if (todo.completed) {
 				tdClass = 'todo-done';
 				isDone = 'Mark as Not Done';
@@ -44,7 +45,7 @@ var TodoList = React.createClass({
 		if (this.props.todos.length > 0) {
 			output = this.props.todos.map(createTodoRow, this)
 		} else {
-			output = (<tr><td>You have nothing to do</td></tr>);
+			output = (<tr><td>There aren't any posts</td></tr>);
 		}
 		return (
 			<table className="table">

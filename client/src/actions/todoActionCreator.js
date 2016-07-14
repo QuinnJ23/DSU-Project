@@ -17,7 +17,7 @@ var TodoActionCreator = {
 				});
 			})
 			.fail(function (xhr, status, err) {
-				console.log('Create Todo Failed!');
+				console.log('Failed To Post!');
 			});
 	},
 
@@ -32,7 +32,7 @@ var TodoActionCreator = {
 				});
 			})
 			.fail(function (xhr, status, err) {
-				console.log('Delete Todo Failed!')
+				console.log('Failed To Delete Post!')
 			});
 	},
 
@@ -47,7 +47,7 @@ var TodoActionCreator = {
 				});
 			})
 			.fail(function (xhr, status, err) {
-				console.log('Update Todo Failed!');
+				console.log('Failed To Update Post!');
 			});
 	}
 };

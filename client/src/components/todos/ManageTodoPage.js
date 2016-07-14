@@ -12,7 +12,7 @@ var ManageTodoPage = React.createClass({
 		return {
 			errors: {},
 			todo: {
-				post: '',
+				post: ''
 			}
 		}
 	},
@@ -64,9 +64,10 @@ var ManageTodoPage = React.createClass({
 		var newErrors = {};
 
 		if (this.state.todo.post.length < 3) {
-			newErrors.post = 'Post cannot be less than 3 characters...silly goose';
+			newErrors.post = 'Post cannot be less than 3 characters...pato';
 			formIsValid = false;
 		}
+
 
 		this.setState({
 			errors: newErrors

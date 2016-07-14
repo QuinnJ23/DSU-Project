@@ -9,7 +9,7 @@ var path = require('path')
 // Configure Mongoose
 
 //This changes what database you are connected to on the dixie server
-mongoose.connect('mongodb://mongodb.cs.dixie.edu/FinalProjectForum')
+mongoose.connect('mongodb://mongodb.cs.dixie.edu/Swoop2')
 
 mongoose.connection.on('connected', function () {
 	console.log('Data Base Connected...'.rainbow)
