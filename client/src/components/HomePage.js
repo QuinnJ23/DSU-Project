@@ -102,6 +102,7 @@ var Home = React.createClass({
 		return (
 			<div className="jumbotron">
 				<h1>Welcome To Swoop</h1>
+				<p>Fly with the eagles</p>
 				<TodoForm
 					todo={this.state.todo}
 					saveTodoState={this.saveTodoState}

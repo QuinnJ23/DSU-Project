@@ -12,8 +12,7 @@ var ManageTodoPage = React.createClass({
 		return {
 			errors: {},
 			todo: {
-				title: '',
-				description: ''
+				post: ''
 			}
 		}
 	},
@@ -33,7 +32,7 @@ var ManageTodoPage = React.createClass({
 		var value = event.target.value;
 		var newTodo = Object.assign({}, this.state.todo);
 
-		// sort of like todo.title or todo.description
+		// sort of like todo.title or 
 		newTodo[field] = value;
 
 		this.setState({
@@ -64,15 +63,11 @@ var ManageTodoPage = React.createClass({
 		var formIsValid = true;
 		var newErrors = {};
 
-		if (this.state.todo.title.length < 3) {
-			newErrors.title = 'Title cannot be less than 3 characters...silly goose';
+		if (this.state.todo.post.length < 3) {
+			newErrors.post = 'Post cannot be less than 3 characters...pato';
 			formIsValid = false;
 		}
 
-		if (this.state.todo.description.length < 3) {
-			newErrors.description = 'Description cannot be less than 3 characters...crazy pants';
-			formIsValid = false;
-		}
 
 		this.setState({
 			errors: newErrors
@@ -86,7 +81,7 @@ var ManageTodoPage = React.createClass({
 		console.log(this.state.todo);
 		return (
 			<div>
-				<h2>Manage Todo</h2>
+				<h2>Create Posts</h2>
 				<TodoForm
 					todo={this.state.todo}
 					saveTodoState={this.saveTodoState}
