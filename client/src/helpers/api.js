@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function getAllTodos () {
-	var url = '/todos';
+	var url = '/todos/';
 	var data = {};
 	var type = 'GET';
 

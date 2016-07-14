@@ -17,10 +17,28 @@ var TodoActionCreator = {
 				});
 			})
 			.fail(function (xhr, status, err) {
-				console.log('Create Todo Failed!');
+				console.log('Failed To Post!');
 			});
 	},
 
+<<<<<<< HEAD
+=======
+	deleteTodo: function (todo) {
+		var deleteTodoPromise = API.deleteTodo(todo);
+
+		deleteTodoPromise
+			.then(function () {
+				Dispatcher.dispatch({
+					actionType: ActionTypes.DELETE_TODO,
+					todoId: todo._id
+				});
+			})
+			.fail(function (xhr, status, err) {
+				console.log('Failed To Delete Post!')
+			});
+	},
+
+>>>>>>> b661c66e6f11361c0f74a85e7067d40c94b40804
 	updateTodo: function (todo) {
 		var updateTodoPromise = API.updateTodo(todo);
 
@@ -32,7 +50,7 @@ var TodoActionCreator = {
 				});
 			})
 			.fail(function (xhr, status, err) {
-				console.log('Update Todo Failed!');
+				console.log('Failed To Update Post!');
 			});
 	}
 };
