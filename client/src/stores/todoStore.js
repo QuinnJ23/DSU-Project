@@ -43,7 +43,7 @@ Dispatcher.register(function (action) {
 			// add the todo
 			_todos.push(action.todo);
 			TodoStore.emitChange();
-			toastr.success('Todo CREATED!!!', 'CREATED TODO');
+			toastr.success('Swooped in!', 'Success');
 			break;
 		case ActionTypes.DELETE_TODO:
 			_.remove(_todos, {_id: action.todoId});

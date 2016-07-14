@@ -74,6 +74,10 @@ var Home = React.createClass({
 		} else {
 			TodoActionCreator.createTodo(this.state.todo);
 		}
+
+		this.setState({
+			todo: {post: ''}
+		})
 		// todoApi.saveTodo(this.state.todo);
 		
 
@@ -89,6 +93,8 @@ var Home = React.createClass({
 		}
 
 
+
+
 		this.setState({
 			errors: newErrors
 		});
@@ -99,6 +105,7 @@ var Home = React.createClass({
 
 
 	render: function () {
+		var displayTodos = this.state.todos.slice()
 		return (
 			<div className="jumbotron">
 				<h1>Welcome To Swoop</h1>
@@ -111,7 +118,7 @@ var Home = React.createClass({
 				/>
 
 				<TodoList
-					todos={this.state.todos}
+					todos={displayTodos.reverse()}
 					/>
 			</div>
 		);

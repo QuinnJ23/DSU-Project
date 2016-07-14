@@ -51,7 +51,7 @@ var TodoList = React.createClass({
 			<table className="table">
 				<thead>
 					<tr>
-						<th>post</th>
+						<th></th>
 						<th></th>
 						<th></th>
 					</tr>
