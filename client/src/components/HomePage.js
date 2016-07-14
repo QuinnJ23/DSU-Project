@@ -34,8 +34,6 @@ var Home = React.createClass({
 
 });
 
-
-
 // var TodoForm = React.createClass({
 // 	render: function () {
 // 		console.log(this.props.errors);
@@ -54,6 +52,7 @@ var Home = React.createClass({
 // 		);
 // 	}
 // });
+
 
 
 

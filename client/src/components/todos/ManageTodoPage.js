@@ -32,7 +32,10 @@ var ManageTodoPage = React.createClass({
 		var value = event.target.value;
 		var newTodo = Object.assign({}, this.state.todo);
 
+
 		// sort of like todo.post
+
+		// sort of like todo.title or 
 		newTodo[field] = value;
 
 		this.setState({
@@ -80,7 +83,7 @@ var ManageTodoPage = React.createClass({
 		console.log(this.state.todo);
 		return (
 			<div>
-				<h2>Manage Todo</h2>
+				<h2>Create Posts</h2>
 				<TodoForm
 					todo={this.state.todo}
 					saveTodoState={this.saveTodoState}
