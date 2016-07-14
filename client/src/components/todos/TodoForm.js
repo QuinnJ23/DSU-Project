@@ -9,10 +9,9 @@ var TodoForm = React.createClass({
 		console.log(this.props.errors);
 		return (
 			<form onSubmit={this.props.saveTodo}>
-				<h3>Post Form</h3>
+				<h3>Post a Swoop</h3>
 				<TextInput
-					name="post"
-					placeholder="Post"
+					placeholder="Enter your Swoop Here"
 					value={this.props.todo.post}
 					saveTodoState={this.props.saveTodoState}
 					error={this.props.errors.post}

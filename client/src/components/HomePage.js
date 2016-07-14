@@ -47,24 +47,6 @@ var Home = React.createClass({
 			todos: TodoStore.getAllTodos()
 		});
 	},
-	// 	getInitialState: function () {
-	// 	return {
-	// 		errors: {},
-	// 		todo: {
-	// 			post: ''
-	// 		}
-	// 	}
-	// },
-
-	// componentWillMount: function () {
-		// var todoId = this.props.params.id;
-
-		// if (todoId) {
-		// 	this.setState({
-		// 		todo: TodoStore.getTodoById(todoId)
-		// 	});
-		// }
-	// },
 
 	saveTodoState: function (event) {
 		var field = event.target.name;
@@ -120,8 +102,6 @@ var Home = React.createClass({
 		return (
 			<div className="jumbotron">
 				<h1>Welcome To Swoop</h1>
-				<p>Lets post some stuff</p>
-				<h2>Create Posts</h2>
 				<TodoForm
 					todo={this.state.todo}
 					saveTodoState={this.saveTodoState}
