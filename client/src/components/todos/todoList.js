@@ -36,7 +36,7 @@ var TodoList = React.createClass({
 
 			return (
 				<tr key={todo._id}>
-					<td className={tdClass}><Link to={'/manage-todo/' + todo._id}>{todopost}</Link></td>
+					<td className="potato">{todopost}</td>
 					<td><a href="#" onClick={this.deleteTodo.bind(this, todo)}>Delete</a></td>
 					<td><a href="#" onClick={this.updateTodo.bind(this, todo)}>{isDone}</a></td>
 				</tr>
