@@ -4,18 +4,15 @@ module.exports = {
   todos: [
     {
       id: 0,
-      title: 'Wear tech shirts',
-      description: 'To look impressive'
+      post: 'Wear tech shirts'
     },
     {
       id: 1,
-      title: 'Use big words in conversation',
-      description: 'To look like you know what your are talking about'
+      post: 'Use big words in conversation'
     },
     {
       id: 2,
-      title: 'Steal DJ\'s car',
-      description: 'To do donuts in the parking lot'
+      post: 'Steal DJ\'s car'
     }
   ]
 };

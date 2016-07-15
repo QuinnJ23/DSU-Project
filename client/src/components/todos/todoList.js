@@ -7,11 +7,6 @@ var TodoActionCreator = require('../../actions/todoActionCreator');
 
 var TodoList = React.createClass({
 
-	deleteTodo: function (todo, event) {
-		event.preventDefault();
-		TodoActionCreator.deleteTodo(todo);
-	},
-
 	updateTodo: function (todo, event) {
 		event.preventDefault();
 		todo.completed ? todo.completed = false : todo.completed = true;
@@ -65,5 +60,3 @@ var TodoList = React.createClass({
 });
 
 module.exports = TodoList;
-
-

@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var TodoList = require('./TodoList');
+var TodoList = require('./todoList');
 var Link = require('react-router').Link;
 var TodoStore = require('../../stores/todoStore');
 
@@ -31,6 +31,8 @@ var Todos = React.createClass({
 	render: function () {
 		return (
 			<div>
+				<h2>Forms</h2>
+				<Link className="btn btn-success btn-sm" to="/manage-todo">Add Form</Link>
 				<h2>Posted Posts</h2>
 				<Link className="btn btn-success btn-sm" to="/manage-todo">Add todo</Link>
 				<TodoList 

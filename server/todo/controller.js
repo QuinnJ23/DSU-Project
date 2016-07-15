@@ -7,9 +7,7 @@ module.exports = {
 	index: indexTodo,
 	show: showTodo,
 	// UPDATE
-	update: updateTodo,
-	// DELETE
-	delete: deleteTodo
+	update: updateTodo
 }
 
 function createTodo(req, res)
@@ -26,18 +24,7 @@ function createTodo(req, res)
 	})
 }
 
-function deleteTodo(req, res)
-{
-	findTodo(req, res, function (item)
-	{
-		item.remove(function (err)
-		{
-			if (err) return reportError(err, res)
 
-			res.status(204).end()
-		})
-	})
-}
 
 function indexTodo(req, res)
 {

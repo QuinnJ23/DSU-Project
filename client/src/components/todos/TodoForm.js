@@ -15,7 +15,7 @@ var TodoForm = React.createClass({
 					value={this.props.todo.post}
 					saveTodoState={this.props.saveTodoState}
 					error={this.props.errors.post}
-					autocomplete="off"
+					autoComplete="off"
 				/>
 				<input type="submit" value="Post" className="btn btn-success btn-lg" />
 			</form>

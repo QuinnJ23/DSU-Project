@@ -13,4 +13,6 @@ PostSchema.pre('save', function (done)
 	done()
 })
 
+// module.exports = mongoose.model('Todo', TodoSchema)
+
 module.exports = mongoose.model('Todo', PostSchema)
