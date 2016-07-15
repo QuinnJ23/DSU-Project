@@ -9,7 +9,13 @@ var TodoList = React.createClass({
 
 	updateTodo: function (todo, event) {
 		event.preventDefault();
-		todo.completed ? todo.completed = false : todo.completed = true;
+		todo.count++;
+		TodoActionCreator.updateTodo(todo);
+	},
+
+	subtract: function (todo, event) {
+		event.preventDefault();
+		todo.count--;
 		TodoActionCreator.updateTodo(todo);
 	},
 
@@ -38,7 +44,10 @@ var TodoList = React.createClass({
 				<tr key={todo._id}>
 					<td className={tdClass}>{todopost}</td>
 					<td><a href="#" onClick={this.deleteTodo.bind(this, todo)}>Delete</a></td>
-					<td><a href="#" onClick={this.updateTodo.bind(this, todo)}>{isDone}</a></td>
+					<td><a href="#" onClick={this.updateTodo.bind(this, todo)}>Like</a></td>
+					<td><a href="#" onClick={this.subtract.bind(this, todo)}>Unlike</a></td>
+					<td>{todo.count}</td>
+
 				</tr>
 			);
 		};
