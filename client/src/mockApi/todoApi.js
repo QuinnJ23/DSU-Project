@@ -56,6 +56,11 @@ var todoApi = {
     }
 
     return _clone(todo);
+    },
+ 
+   deleteTodo: function(id) {
+     console.log('Deleted Todo ID ' + id + ', mocking an AJAX call...');
+     _.remove(todos, { id: id});
   }
 };
 

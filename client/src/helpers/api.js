@@ -5,6 +5,7 @@ var ajax = require('./ajax');
 module.exports = {
 	getAllTodos: getAllTodos,
 	createTodo: createTodo,
+	deleteTodo: deleteTodo,
 	updateTodo: updateTodo
 }
 
@@ -22,6 +23,15 @@ function createTodo (todo) {
 
 	return ajax(url, data);
 }
+
+function deleteTodo (todo) {
+ 	var url = '/todos/' + todo._id;
+ 	var data = {};
+ 	var type = 'DELETE';
+ 
+ 	return ajax(url, data, type);
+ 	
+ }
 
 function updateTodo (todo) {
 	var url = '/todos/' + todo._id;

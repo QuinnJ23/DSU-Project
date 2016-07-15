@@ -13,6 +13,12 @@ var TodoList = React.createClass({
 		TodoActionCreator.updateTodo(todo);
 	},
 
+	deleteTodo: function (todo, event) {
+ 	event.preventDefault();
+ 	TodoActionCreator.deleteTodo(todo);
+ 	},
+
+
 	render: function () {
 		var output;
 
