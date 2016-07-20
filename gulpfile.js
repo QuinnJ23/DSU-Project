@@ -80,7 +80,7 @@ gulp.task('watch', function () {
 });
 
 
-gulp.task('default', ['html', 'css', 'js', 'watch']);
+gulp.task('default', ['html', 'css', 'js', 'images', 'watch']);
 
 
 

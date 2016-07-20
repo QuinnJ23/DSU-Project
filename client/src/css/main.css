@@ -2,3 +2,11 @@
 	opacity: 0.5;
 }
 
+#welcome {
+	color:#0CE3AC;
+}
+#image {
+	position:absolute;
+	left: 1000px;
+	top:150px;
+}

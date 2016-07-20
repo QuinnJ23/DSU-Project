@@ -65,6 +65,7 @@ function updateTodo(req, res)
 	{
 		item.post = req.body.post
 		item.completed = req.body.completed
+		item.count = req.body.count
 
 		item.save(function (err)
 		{
